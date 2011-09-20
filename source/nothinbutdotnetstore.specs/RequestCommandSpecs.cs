@@ -26,10 +26,8 @@ namespace nothinbutdotnetstore.specs
             Because b = () =>
                 result = sut.can_process(request);
 
-
             It should_make_the_decision_by_leveraging_its_request_specification = () =>
                 result.ShouldBeTrue();
-
 
             static bool result;
             static IContainRequestInformation request;
